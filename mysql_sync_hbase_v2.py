@@ -106,7 +106,7 @@ def select_tb(tableName, rowKey):
 def main():
 
     try:
-        conn = dbi.connect(host="10.0.1.169", user='tripb2bdba', passwd='Tripb2b.com', db='operation', port=3306, charset='utf8')
+        conn = dbi.connect(host="10.0.1.169", user='******', passwd='*****', db='operation', port=3306, charset='utf8')
         cur = conn.cursor()
         count = cur.execute('select id from tb_mysql_moni order by id DESC limit 1440')
         print count
